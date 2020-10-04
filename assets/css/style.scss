@@ -1,0 +1,485 @@
+// Importing Font
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+/*Defining Font For Website*/
+@font-face {
+  font-family: "Montserrat-Regular";
+  src: url("../fonts/Montserrat-Regular.otf");
+}
+
+@font-face {
+  font-family: "Montserrat-Bold";
+  src: url("../fonts/Montserrat-Bold.otf");
+}
+
+@font-face {
+  font-family: "Exo-Regular";
+  src: url("../fonts/Exo-Regular.otf");
+}
+
+@font-face {
+  font-family: "Exo-Bold";
+  src: url("../fonts/Exo-Bold.otf");
+}
+
+// Variable Defining
+$font-montserrat-regular: "Montserrat-Regular";
+$font-montserrat-bold: "Montserrat-Bold";
+
+$font-exo-regular: "Exo-Regular";
+$font-exo-bold: "Exo-Bold";
+
+$navbar-bg-color: rgba(78, 80, 93, 0.4);
+$navbar-text-color: white;
+$navbar-font: "Poppins";
+
+body {
+  font-family: $font-montserrat-regular;
+}
+
+// Site Navbar
+.site-navbar {
+  background: $navbar-bg-color;
+
+  .navbar-brand {
+    img {
+      width: 80%;
+      height: auto;
+    }
+  }
+
+  .navbar-nav {
+    .nav-link {
+      font-family: $navbar-font;
+      color: $navbar-text-color;
+      padding-right: 1rem;
+      padding-left: 1rem;
+      font-size: 14px;
+    }
+  }
+}
+
+// Hero
+.hero-wrapper {
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+  background: url("./../images/hero_image.jpg") no-repeat top center;
+  background-size: cover;
+  object-fit: cover;
+
+  .hero-content {
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    padding-bottom: 2rem;
+
+    .hero-title {
+      font-size: 3rem;
+      font-family: $font-exo-bold;
+    }
+  }
+}
+
+
+// Feature Testimony
+.feature-testimony-wrapper {
+  .feature-testimony-content {
+    .feature-testimony-title {
+      font-family: $font-montserrat-bold;
+      color: #1d2440;
+    }
+
+    .feature-testimony-items {
+      .feature-testimony-item {
+        border-top: 1px solid #4b524f;
+
+
+        &:last-child {
+          border-bottom: 1px solid #4b524f;
+        }
+
+        .feature-item-text {
+          font-family: $font-montserrat-bold;
+          color: #1d2440;
+          line-height: 2.5rem;
+        }
+
+        .feature-item-people {
+          .feature-item-people-name {
+            font-family: $font-montserrat-bold;
+            color: #1d2440;
+          }
+
+          .feature-item-people-designation {
+            font-family: $font-montserrat-bold;
+            color: #586886;
+          }
+        }
+      }
+    }
+
+    .feature-testimony-brand {
+      .feature-brand-carousel.owl-carousel {
+        .owl-item img {
+          display: inline-block !important;
+          width: 100%;
+          height: 150px;
+          object-fit: contain;
+        }
+      }
+    }
+
+  }
+}
+
+// Video Testimony
+.video-testimony-wrapper {
+  background: #1d2440;
+
+  .video-testimony-content {
+    .video-testimony-title {
+      font-family: $font-montserrat-bold;
+      color: #ffffff;
+    }
+
+    .video-testimony-items {
+      .video-testimony-item {
+        border-bottom: 1px solid #ffffff;
+
+        &:last-child {
+          border-bottom: 0;
+        }
+
+        .video-testimony-text {
+          .video-testimony-text-image {
+            img {
+              width: 50%;
+            }
+          }
+
+          .video-testimony-text-say {
+            color: #ffffff;
+            line-height: 2rem;
+          }
+
+          .video-testimony-people {
+            .video-testimony-people-name {
+              font-family: $font-montserrat-bold;
+              color: #ffffff;
+            }
+
+            .video-testimony-people-designation {
+              color: #d9d9e3;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// Experience
+.experience-wrapper {
+  width: 100%;
+  height: 350px;
+  background: url("./../images/experience/experience-bg.jpg") no-repeat top center;
+  background-size: cover;
+  object-fit: cover;
+
+  h6 {
+    font-family: $font-montserrat-bold;
+  }
+
+  h5 {
+    font-family: $font-exo-bold;
+  }
+
+  .experience-read-more-btn {
+    font-family: $font-montserrat-bold;
+    font-size: 0.8rem;
+    background: #5bbc2e;
+    border-radius: 0.8rem;
+  }
+}
+
+//People Saying
+.people-saying-wrapper {
+  background: #f2f2f2;
+
+  .people-saying-content {
+    .people-saying-title {
+      font-family: $font-montserrat-bold;
+      color: #1d2440;
+    }
+
+    .people-saying-carousel-wrapper{
+      .people-saying-carousel{
+        background: #d2d6de;
+        border-radius: 5px;
+        position: relative;
+        .people-saying-item{
+          background: transparent;
+          .people-saying-avatar{
+            img{
+              display: inline-block;
+              width: 150px;
+              height: 150px;
+              object-fit: contain;
+            }
+          }
+
+          .people-saying-content{
+            .people-say-quatation{
+              display: inline-block !important;
+              width: 42px;
+              height: 32px;
+              margin: 1rem 0;
+            }
+
+            .people-saying-text{
+              font-family: $font-montserrat-bold;
+              color: #1d2440;
+              font-size: 0.9rem;
+              line-height: 1.8rem;
+            }
+
+            .people-saying-name{
+              font-family: $font-montserrat-bold;
+              color: #1d2440;
+            }
+
+            .people-saying-designation{
+
+              color: #53596f;
+              font-weight: bold;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+//Happy Client
+.happy-client-wrapper {
+  .happy-client-content {
+    .happy-client-title {
+      font-family: $font-montserrat-bold;
+      color: #1d2440;
+    }
+
+    .happy-client-subtitle {
+      color: #1d2440;
+      font-weight: bold;
+    }
+
+    .happy-client-accordion-wrapper {
+      #happy-client-accrodion {
+        .happy-client-accrodion-item {
+          .happy-client-item-title {
+            color: #1d2440;
+            cursor: pointer;
+          }
+
+          .happy-client-item-content {
+            p {
+              font-size: 0.9rem;
+            }
+          }
+        }
+      }
+    }
+
+    .happy-client-carousel-wrapper {
+      .happy-client-carousel {
+        .happy-client-carousel-item {
+          background: #f4f4f4;
+
+          .happy-client-popup-image{
+            position: absolute;
+            top: 10px;
+            left: -10px;
+            img{
+              display: inline-block !important;
+              width: 80%;
+            }
+          }
+
+          .happy-client-logo {
+            img {
+              display: inline-block !important;
+              width: 100px;
+              height: 100px;
+              object-fit: contain;
+            }
+          }
+
+          .happy-client-carousel-people-name {
+            font-family: $font-montserrat-bold;
+            color: #1d2440;
+          }
+
+          .happy-client-carousel-people-designation {
+            font-family: $font-montserrat-bold;
+            color: #586886;
+            font-size: 0.8rem;
+          }
+
+          .happy-client-carousel-text{
+            color: #1d2440;
+            font-size: 0.9rem;
+            font-weight: bold;
+            line-height: 1.8rem;
+          }
+        }
+
+      }
+    }
+  }
+}
+
+// Case Study
+.case-study-wrapper {
+  .case-study-content {
+    //  border-top: 1px solid #1d2440;
+    //border-bottom: 1px solid #1d2440;
+    .case-study-title {
+      font-family: $font-montserrat-bold;
+      color: #1d2440;
+    }
+
+    .case-study-items {
+      .case-study-item {
+        background: #f2f2f2;
+
+        .case-study-image {
+          border-bottom: 1px solid #a1d589;
+        }
+
+        .case-study-text {
+          p {
+            font-size: 0.7rem;
+            font-weight: bold;
+            line-height: 1.8rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+// Partner
+.partner-wrapper {
+  width: 100%;
+  background: url("./../images/map.jpg") no-repeat top center;
+  background-size: cover;
+  object-fit: cover;
+
+  .partner-content {
+    .partner-title {
+      font-family: $font-montserrat-bold;
+      color: #1d2440;
+    }
+  }
+}
+
+// Footer
+.footer-wrapper {
+  width: 100%;
+  background: #172e58;
+  color: #ffffff;
+
+  .footer-content {
+    .footer-items {
+      .footer-item {
+        .footer-item-title {
+          border-bottom: 1px solid #ffffff;
+        }
+
+        .footer-item-content {
+          .nav {
+            .nav-link {
+              font-size: 0.8rem;
+              color: #ffffff;
+              padding: 0.8rem 0;
+            }
+          }
+        }
+      }
+    }
+
+    .footer-copyright {
+      .footer-copyright-title {
+        font-size: 0.7rem;
+      }
+    }
+  }
+}
+
+
+// Responsive
+@media (max-width: 500px) {
+  .hero-title {
+    font-size: 1.8rem !important;
+    line-height: 2.5rem;
+  }
+  .hero-description {
+    text-align: left !important;
+    font-weight: normal;
+  }
+
+  .feature-testimony-title {
+    font-size: 1.3rem;
+  }
+  .feature-testimony-item-rightside {
+    order: 1;
+  }
+  .feature-testimony-item-leftside {
+    order: 2;
+  }
+
+
+  .video-testimony-title {
+    font-size: 1.3rem;
+  }
+  .video-testimony-video {
+    order: 1;
+    margin-bottom: 1rem;
+  }
+  .video-testimony-text {
+    order: 2;
+    text-align: center;
+  }
+
+  .experience-wrapper {
+    h6 {
+      font-size: 0.8rem;
+      font-weight: normal;
+    }
+
+    h5 {
+      font-size: 1rem;
+    }
+  }
+
+  .people-saying-title {
+    font-size: 1.3rem;
+  }
+
+  .happy-client-title {
+    font-size: 1.3rem;
+    margin-top: 1rem
+  }
+  .happy-client-subtitle {
+    font-size: 1.1rem;
+  }
+
+  .happy-client-item-title {
+    font-size: 0.9rem;
+  }
+
+  .partner-title {
+    font-size: 2rem;
+  }
+}
